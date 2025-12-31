@@ -1,10 +1,10 @@
 // khai báo danh sách gồm các món ăn gợi ý
-const A = ["Bún bò", "Cơm tấm", "Gà rán", "Mì cay", "Phở", "Bún đậu", "Cơm chiên", "Bánh cuốn", "Bún thịt nướng", "Mì xào", "Cơm sườn", "Cháo lòng", "Bún mắm", "Cơm gà xối mỡ", "Bánh canh"];
+const foods  = ["Bún bò", "Cơm tấm", "Gà rán", "Mì cay", "Phở", "Bún đậu", "Cơm chiên", "Bánh cuốn", "Bún thịt nướng", "Mì xào", "Cơm sườn", "Cháo lòng", "Bún mắm", "Cơm gà xối mỡ", "Bánh canh"];
 
 //hàm random các món ăn có trong danh sách
 function getRandomFood() {
-    const random = Math.floor(Math.random() * A.length); //lấy ngẫu nhiên 1 số trong phạm vi chiều dài của danh sách
-    return A[random]; //trả về 1 món ăn ngẫu nhiên trong danh sách
+    const random = Math.floor(Math.random() * foods.length); //lấy ngẫu nhiên 1 số trong phạm vi chiều dài của danh sách
+    return foods[random]; //trả về 1 món ăn ngẫu nhiên trong danh sách
 }
 
 //hàm in ra món ăn random
